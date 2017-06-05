@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  color: #231f20;
+  background-color: #F5A6BC;
+}
+
+h1 {
+  padding-top: 15px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 1.24em;
+  text-align: center;
+  width: 90%;
+  padding-top: 40px;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  line-height: 30px;
+  padding: 5px;;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  color: white;
+  background-color:#F386A5;
+  clear: both;
+  z-index: 1000px;
+}
+
+.logo {
+  display: none;
+}
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+  display: inline;
+  padding-top: 10px;
+}
+
+nav a {
+  font-size: 1.25em;
+  color: #231f20;
+  text-decoration: none;
+  padding: 10px;
+  clear: both;
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.5em;
+}
+
+.contact span {
+  font-size: 1.3em;
+}
+
+.body_img {
+  max-width: 70%;
+  border-radius: 30px;
+}
+
+.headshot {
+  margin-top: 80px;
+  max-width: 60%;
+  /*border-radius: 100%;*/
+}
+
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #F386A5;
+}
+
+.wrapper {
+  min-height: calc(100vh - 138px);
+}
+
+div.img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+}
+
+div.img img {
+  width: 200px;
+  height: auto;
+  margin: 60px;
+  border: 5px solid #ffffff;
+  border-radius: 2%;
+}
+
+.crown {
+  padding-top: 20px;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.crown img {
+  width: 80px;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/************
+
+Media Queries
+
+************/
+
+@media only screen and (min-width: 480px) {
+
+  .logo {
+    width: 50px;
+    float: left;
+    margin-left: 20px;
+    clear: both;
+    display: inherit;
+  }
+
+  .nav {
+    height: auto;
+    line-height: 30px;
+    padding: 5px;;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    color: white;
+    background-color:#F386A5;
+    clear: both;
+    z-index: 1000px;
+  }
+
+  .nav a {
+    font-size: 1.25em;
+  }
+
+  .logo {
+    width: 60px;
+    float: left;
+    margin-left: 20px;
+    clear: both;
+  }
+
+  nav {
+    display: inline;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 30px;
+    float: right;
+  }
+
+  nav a {
+    color: #231f20;
+    text-decoration: none;
+    margin: 15px;
+    clear: both;
+  }
+
+
+  .section1 {
+    max-width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section2 {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  p {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 0;
+  }
+
+  .wrapper {
+    min-height: calc(100vh - 69px);
+  }
+
+
+
+  .crown {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .crown img {
+    width: 80px;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .logo {
+    width: 60px;
+    float: left;
+    margin-left: 20px;
+    clear: both;
+  }
+
+  p {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 0;
+  }
+
+  .crown {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .crown img {
+    width: 80px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .logo {
+    width: 60px;
+    float: left;
+    margin-left: 20px;
+    clear: both;
+  }
+
+  .headshot {
+    margin-top: 70px;
+    max-width: 80%;
+  }
+
+  .container {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact {
+    margin-top: -20px;
+  }
+
+
+
+  .col {
+    float: left;
+  }
+
+  .primary {
+    width: 50%;
+  }
+
+  .secondary {
+    width: 45%;
+  }
+
+  .section1 {
+    padding: 0;
+  }
+
+  .section2 {
+    margin-top: 180px;
+  }
+
+  p {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 2.2em;
+    text-align: center;
+    padding-right: 0px;
+    padding-top: 0;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+  }
+
+  .crown {
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  .crown img {
+    width: 80px;
+  }
+  }
+
+}
